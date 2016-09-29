@@ -48,6 +48,18 @@ content:`
                      my lovely frnd sandeep.
                      from your crazy frnd anuj
                      thank u.
+                    </p> `},
+     'rao-shaab':{title: 'rao-shaab',
+            heading: 'Talent boy(famous boy)',
+            date: 'sept 29, 2016',
+            content:`  <p>
+                     Sandeep is my best frnd(brother).he is so cute and silent.
+                     he is not tell lie at any time.
+                     he is so innocent that he obey all frnd and help  all frnd.
+                     Sandeep be like that, whatever, you are good.
+                     my lovely frnd sandeep.
+                     from your crazy frnd anuj
+                     thank u.
                     </p> `}
 };
 
