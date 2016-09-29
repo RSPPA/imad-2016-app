@@ -5,6 +5,53 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var content = {
+title: 'article-one | Anuj kumar',
+heading: 'Article one',
+date: 'sept 5, 2016',
+content:`
+        <p>
+         this is the content of my first artical. my frineds are sandeep, akshay, harshit,debasish,sonu,utsav,cr-prem,best friend debassish(tadashi huamada).
+        </p>
+         <p>
+         this is the content of my first artical. my frineds are sandeep,akshay, harshit,debasish,utsav,cr-prem,best friend debassish(tadashi huamada).
+         </p>
+         <p>
+         this is the content of my first artical. my frineds are sandeep,akshay, harshit,debasish,sonu,utsav,cr-prem,best friend debassish(tadashi huamada).
+         </p>`
+};
+
+var htmlTemplate = `<html>
+ <head>
+     <title>
+         Article one | Anuj kumar
+     </title> 
+     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+     <link href="/ui/style.css" rel="stylesheet" />
+ </head>  
+ 
+   <body>
+     <div class="container">
+         <div>
+             <a href="/">Home</a>
+         </div>
+         <hr/>
+         <h3>
+            ${heading}
+         </h3>
+         <div>
+            ${date}
+         </div>
+         <div>
+            ${content}
+         </div>
+     </div>     
+   </body>    
+</html>
+
+
+`;
+
 app.get('/', function (req, res) {
  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
