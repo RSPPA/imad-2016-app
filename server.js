@@ -113,9 +113,6 @@ app.get('/:articleName',function(req, res) {
 
 
 
-app.get('/rao-shaab', function (req, res) {
- res.sendFile(path.join(__dirname, 'ui', 'rao-shaab.html'));
-});
 
 
  
