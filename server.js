@@ -5,7 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var content = {
+var articles = {
+     ArticleOne :{
 title: 'article-one | Anuj kumar',
 heading: 'Article one',
 date: 'sept 5, 2016',
@@ -19,6 +20,35 @@ content:`
          <p>
          this is the content of my first artical. my frineds are sandeep,akshay, harshit,debasish,sonu,utsav,cr-prem,best friend debassish(tadashi huamada).
          </p>`
+},
+     ArticleTwo : {
+            title: 'article-one | Anuj kumar',
+            heading: 'Article one',
+            date: 'sept 5, 2016',
+            content:` <p>
+                     debasish is my best frnd in the world.he is so cute and silent.
+                     he is not tell lie at any time.
+                     he is so innocent that he obey all frnd and help for all frnd.
+                     debasish be like that, whatever you are good.
+                     my lovely frnd deba.
+                     from your lazy frnd anuj
+                     thank u.
+                     </p>
+        
+                    `},
+     ArticleThree: {
+             title: 'article-one | Anuj kumar',
+            heading: 'Article one',
+            date: 'sept 5, 2016',
+            content:`  <p>
+                     Sandeep is my best frnd(brother).he is so cute and silent.
+                     he is not tell lie at any time.
+                     he is so innocent that he obey all frnd and help  all frnd.
+                     Sandeep be like that, whatever, you are good.
+                     my lovely frnd sandeep.
+                     from your crazy frnd anuj
+                     thank u.
+                    </p> `}
 };
 
 function createTemplate (data){ 
