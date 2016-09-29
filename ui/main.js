@@ -1,4 +1,4 @@
 console.log('Loaded!');
-var element = document.getElementById('main-.png');
+var element = document.getElementById('main-text');
 
-element.innertHTML = '1(1).png'; 
+element.innertHTML = 'hello everyone'; 
