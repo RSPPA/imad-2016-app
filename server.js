@@ -21,10 +21,16 @@ content:`
          </p>`
 };
 
+function createTemplate (data){ 
+    var title = data.title;
+    var heading = data.heading ;
+    var date = data.date;
+    var content = data.content;
+    
 var htmlTemplate = `<html>
  <head>
      <title>
-         Article one | Anuj kumar
+        ${title}
      </title> 
      <meta name="viewport" content="width=device-width, initial-scale=1"/>
      <link href="/ui/style.css" rel="stylesheet" />
@@ -49,8 +55,9 @@ var htmlTemplate = `<html>
    </body>    
 </html>
 
-
 `;
+return htmlTemplate;
+}
 
 app.get('/', function (req, res) {
  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
